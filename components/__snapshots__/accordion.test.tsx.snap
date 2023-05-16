@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot — vanilla 1`] = `
+<section
+  className="space-y-3"
+>
+  <article>
+    <header>
+      <button
+        className="
+	flex
+	w-full
+	items-center
+	space-x-2
+	flex-grow
+	text-left
+	subheading
+	py-2
+	border-b-2
+	border-true-gray-200
+	text-true-gray-400
+"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          Foo
+        </span>
+        <svg
+          aria-hidden="true"
+          className="!ml-auto w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </header>
+    <div
+      className="mt-4"
+    />
+  </article>
+  <article>
+    <header>
+      <button
+        className="
+	flex
+	w-full
+	items-center
+	space-x-2
+	flex-grow
+	text-left
+	subheading
+	py-2
+	border-b-2
+	border-true-gray-200
+	text-true-gray-400
+"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          Bar
+        </span>
+        <svg
+          aria-hidden="true"
+          className="!ml-auto w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </header>
+    <div
+      className="mt-4"
+    />
+  </article>
+</section>
+`;
+
+exports[`snapshot — with icons 1`] = `
+<section
+  className="space-y-3"
+>
+  <article>
+    <header>
+      <button
+        className="
+	flex
+	w-full
+	items-center
+	space-x-2
+	flex-grow
+	text-left
+	subheading
+	py-2
+	border-b-2
+	border-true-gray-200
+	text-true-gray-400
+"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M12 3.75a6.715 6.715 0 00-3.722 1.118.75.75 0 11-.828-1.25 8.25 8.25 0 0112.8 6.883c0 3.014-.574 5.897-1.62 8.543a.75.75 0 01-1.395-.551A21.69 21.69 0 0018.75 10.5 6.75 6.75 0 0012 3.75zM6.157 5.739a.75.75 0 01.21 1.04A6.715 6.715 0 005.25 10.5c0 1.613-.463 3.12-1.265 4.393a.75.75 0 01-1.27-.8A6.715 6.715 0 003.75 10.5c0-1.68.503-3.246 1.367-4.55a.75.75 0 011.04-.211zM12 7.5a3 3 0 00-3 3c0 3.1-1.176 5.927-3.105 8.056a.75.75 0 11-1.112-1.008A10.459 10.459 0 007.5 10.5a4.5 4.5 0 119 0c0 .547-.022 1.09-.067 1.626a.75.75 0 01-1.495-.123c.041-.495.062-.996.062-1.503a3 3 0 00-3-3zm0 2.25a.75.75 0 01.75.75A15.69 15.69 0 018.97 20.738a.75.75 0 01-1.14-.975A14.19 14.19 0 0011.25 10.5a.75.75 0 01.75-.75zm3.239 5.183a.75.75 0 01.515.927 19.415 19.415 0 01-2.585 5.544.75.75 0 11-1.243-.84 17.912 17.912 0 002.386-5.116.75.75 0 01.927-.515z"
+            fillRule="evenodd"
+          />
+        </svg>
+        <span>
+          Foo
+        </span>
+        <svg
+          aria-hidden="true"
+          className="!ml-auto w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </header>
+    <div
+      className="mt-4"
+    />
+  </article>
+  <article>
+    <header>
+      <button
+        className="
+	flex
+	w-full
+	items-center
+	space-x-2
+	flex-grow
+	text-left
+	subheading
+	py-2
+	border-b-2
+	border-true-gray-200
+	text-true-gray-400
+"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+            fillRule="evenodd"
+          />
+        </svg>
+        <span>
+          Bar
+        </span>
+        <svg
+          aria-hidden="true"
+          className="!ml-auto w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </header>
+    <div
+      className="mt-4"
+    />
+  </article>
+</section>
+`;

@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot — disabled 1`] = `
+<div>
+  <label
+    htmlFor="1"
+  >
+    <span
+      className="block text-small font-semibold "
+    >
+      Name
+    </span>
+    <input
+      className="mt-1 border rounded px-2 py-1 w-full text-regular border-true-gray-300 bg-gray-200 cursor-not-allowed"
+      defaultValue="Arya"
+      disabled={true}
+      id="1"
+    />
+  </label>
+  <div
+    className="flex mt-1 items-center space-x-1 text-true-gray-500"
+  >
+    <svg
+      aria-hidden="true"
+      className="w-4"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clipRule="evenodd"
+        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z"
+        fillRule="evenodd"
+      />
+    </svg>
+    <span
+      className="block text-xs"
+    >
+      What would you like us to call you?
+    </span>
+  </div>
+</div>
+`;
+
+exports[`snapshot — error 1`] = `
+<div>
+  <label
+    htmlFor="1"
+  >
+    <span
+      className="block text-small font-semibold text-red-500"
+    >
+      Name
+    </span>
+    <input
+      className="mt-1 border rounded px-2 py-1 w-full text-regular border-red-300 bg-white"
+      id="1"
+    />
+  </label>
+  <div
+    className="flex mt-1 items-center space-x-1 text-red-500"
+  >
+    <svg
+      aria-hidden="true"
+      className="w-4"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clipRule="evenodd"
+        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+        fillRule="evenodd"
+      />
+    </svg>
+    <span
+      className="block text-xs"
+    >
+      First name cannot contain mathematical equations
+    </span>
+  </div>
+</div>
+`;
+
+exports[`snapshot — helptext 1`] = `
+<div>
+  <label
+    htmlFor="1"
+  >
+    <span
+      className="block text-small font-semibold "
+    >
+      Name
+    </span>
+    <input
+      className="mt-1 border rounded px-2 py-1 w-full text-regular border-true-gray-300 bg-white"
+      defaultValue="Arya"
+      id="1"
+    />
+  </label>
+  <div
+    className="flex mt-1 items-center space-x-1 text-true-gray-500"
+  >
+    <svg
+      aria-hidden="true"
+      className="w-4"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clipRule="evenodd"
+        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z"
+        fillRule="evenodd"
+      />
+    </svg>
+    <span
+      className="block text-xs"
+    >
+      What would you like us to call you?
+    </span>
+  </div>
+</div>
+`;
+
+exports[`snapshot — vanilla + required 1`] = `
+<div>
+  <label
+    htmlFor="1"
+  >
+    <span
+      className="block text-small font-semibold "
+    >
+      Name *
+    </span>
+    <input
+      className="mt-1 border rounded px-2 py-1 w-full text-regular border-true-gray-300 bg-white"
+      id="1"
+      placeholder="Jon Snow"
+      required={true}
+    />
+  </label>
+</div>
+`;
+
+exports[`snapshot — vanilla 1`] = `
+<div>
+  <label
+    htmlFor="1"
+  >
+    <span
+      className="block text-small font-semibold "
+    >
+      Name
+    </span>
+    <input
+      className="mt-1 border rounded px-2 py-1 w-full text-regular border-true-gray-300 bg-white"
+      id="1"
+      placeholder="Jon Snow"
+    />
+  </label>
+</div>
+`;

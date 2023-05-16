@@ -1,0 +1,865 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots — link 1`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-5 py-3 text-small space-x-2"
+  rel="noreferrer"
+>
+  <svg
+    aria-hidden="true"
+    className="w-4 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</a>
+`;
+
+exports[`snapshots — link 2`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-5 py-3 text-small space-x-2"
+  rel="noreferrer"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-4 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`snapshots — link 3`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-6 py-4 heading-six space-x-3"
+  rel="noreferrer"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</a>
+`;
+
+exports[`snapshots — link 4`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-6 py-4 heading-six space-x-3"
+  rel="noreferrer"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-5 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`snapshots — link 5`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-8 py-5 heading-four space-x-4"
+  rel="noreferrer"
+>
+  <svg
+    aria-hidden="true"
+    className="w-7 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</a>
+`;
+
+exports[`snapshots — link 6`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-8 py-5 heading-four space-x-4"
+  rel="noreferrer"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-7 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`snapshots — link 7`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-5 py-3 text-small space-x-2"
+  rel="noreferrer"
+>
+  <svg
+    aria-hidden="true"
+    className="w-4 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</a>
+`;
+
+exports[`snapshots — link 8`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-5 py-3 text-small space-x-2"
+  rel="noreferrer"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-4 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`snapshots — link 9`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-6 py-4 heading-six space-x-3"
+  rel="noreferrer"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</a>
+`;
+
+exports[`snapshots — link 10`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-6 py-4 heading-six space-x-3"
+  rel="noreferrer"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-5 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`snapshots — link 11`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-8 py-5 heading-four space-x-4"
+  rel="noreferrer"
+>
+  <svg
+    aria-hidden="true"
+    className="w-7 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</a>
+`;
+
+exports[`snapshots — link 12`] = `
+<a
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-8 py-5 heading-four space-x-4"
+  rel="noreferrer"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-7 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`snapshots — link 13`] = `
+<a
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-5 py-3 text-small space-x-2"
+  rel="noreferrer"
+>
+  <svg
+    aria-hidden="true"
+    className="w-4 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</a>
+`;
+
+exports[`snapshots — link 14`] = `
+<a
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-5 py-3 text-small space-x-2"
+  rel="noreferrer"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-4 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`snapshots — link 15`] = `
+<a
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-6 py-4 heading-six space-x-3"
+  rel="noreferrer"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</a>
+`;
+
+exports[`snapshots — link 16`] = `
+<a
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-6 py-4 heading-six space-x-3"
+  rel="noreferrer"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-5 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`snapshots — link 17`] = `
+<a
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-8 py-5 heading-four space-x-4"
+  rel="noreferrer"
+>
+  <svg
+    aria-hidden="true"
+    className="w-7 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</a>
+`;
+
+exports[`snapshots — link 18`] = `
+<a
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-8 py-5 heading-four space-x-4"
+  rel="noreferrer"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-7 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`snapshots — semantic 1`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-5 py-3 text-small space-x-2"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="w-4 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</button>
+`;
+
+exports[`snapshots — semantic 2`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-5 py-3 text-small space-x-2"
+  type="button"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-4 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`snapshots — semantic 3`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-6 py-4 heading-six space-x-3"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</button>
+`;
+
+exports[`snapshots — semantic 4`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-6 py-4 heading-six space-x-3"
+  type="button"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-5 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`snapshots — semantic 5`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-8 py-5 heading-four space-x-4"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="w-7 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</button>
+`;
+
+exports[`snapshots — semantic 6`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-600 text-white px-8 py-5 heading-four space-x-4"
+  type="button"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-7 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`snapshots — semantic 7`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-5 py-3 text-small space-x-2"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="w-4 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</button>
+`;
+
+exports[`snapshots — semantic 8`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-5 py-3 text-small space-x-2"
+  type="button"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-4 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`snapshots — semantic 9`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-6 py-4 heading-six space-x-3"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</button>
+`;
+
+exports[`snapshots — semantic 10`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-6 py-4 heading-six space-x-3"
+  type="button"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-5 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`snapshots — semantic 11`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-8 py-5 heading-four space-x-4"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="w-7 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</button>
+`;
+
+exports[`snapshots — semantic 12`] = `
+<button
+  className="inline-flex items-center rounded !leading-none bg-true-gray-300 text-true-gray-600 px-8 py-5 heading-four space-x-4"
+  type="button"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-7 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`snapshots — semantic 13`] = `
+<button
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-5 py-3 text-small space-x-2"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="w-4 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</button>
+`;
+
+exports[`snapshots — semantic 14`] = `
+<button
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-5 py-3 text-small space-x-2"
+  type="button"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-4 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`snapshots — semantic 15`] = `
+<button
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-6 py-4 heading-six space-x-3"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</button>
+`;
+
+exports[`snapshots — semantic 16`] = `
+<button
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-6 py-4 heading-six space-x-3"
+  type="button"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-5 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`snapshots — semantic 17`] = `
+<button
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-8 py-5 heading-four space-x-4"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="w-7 -ml-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span>
+    Click me
+  </span>
+</button>
+`;
+
+exports[`snapshots — semantic 18`] = `
+<button
+  className="inline-flex items-center rounded !leading-none border border-true-gray-300 text-true-gray-700 px-8 py-5 heading-four space-x-4"
+  type="button"
+>
+  <span>
+    Click me
+  </span>
+  <svg
+    aria-hidden="true"
+    className="w-7 !-mr-2"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+      fillRule="evenodd"
+    />
+  </svg>
+</button>
+`;
