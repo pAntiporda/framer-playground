@@ -4,6 +4,7 @@ import {Image} from 'react-datocms';
 import {isNil} from 'remeda';
 import {collapse} from '@growthops/ext-ts';
 import {Heading, Text} from '@app/components';
+import {MotionConfig, motion} from 'framer-motion';
 
 type CardProperties = {
 	image: ResponsiveImageType;
@@ -14,19 +15,28 @@ type CardProperties = {
 	meta?: JSX.Element;
 };
 
+const contentVariants = {
+	hover: {
+		x: '3%',
+		y: '-3%',
+	},
+};
+
 const generateRootClasses = (isFramed: boolean): string => `
-	overflow-hidden
-	rounded
 	h-full
 	flex
 	flex-col
-	${isFramed ? 'bg-white shadow-lg' : ''}
+	relative
+	rounded-2xl
+	${isFramed ? 'shadow-lg' : ''}
 `;
 
 const generateBodyClasses = (isFramed: boolean): string => `
 	flex
 	flex-col
 	flex-grow
+	bg-white
+	rounded-b-2xl
 	${isFramed ? 'px-4 pb-3' : ''}
 `;
 
@@ -37,7 +47,7 @@ const generateMetaClasses = (hasAutoHeight: boolean): string => `
 
 const generateImageClasses = (isFramed: boolean): string => `
 	w-full
-	${isFramed ? '' : 'rounded shadow-lg'}
+	${isFramed ? '' : 'rounded-2xl shadow-lg'}
 `;
 
 const Card = ({image, heading, content, meta, isFramed = false, hasAutoHeight = false}: CardProperties): JSX.Element => {
@@ -51,18 +61,28 @@ const Card = ({image, heading, content, meta, isFramed = false, hasAutoHeight = 
 	}), [isFramed, hasAutoHeight]);
 
 	return (
-		<article className={classes.root}>
-			<Image className={classes.image} data={image}/>
-			<div className={classes.body}>
-				<Heading className={classes.heading} label={heading} variant="heading-four"/>
-				<Text className={classes.content} variant="text-regular">{content}</Text>
-				{!isNil(meta) && (
-					<div className={classes.meta}>
-						{meta}
+		<MotionConfig transition={{duration: 0.4, type: 'tween'}}>
+			<motion.article
+				className={classes.root}
+				whileHover="hover"
+			>
+				<div className="bg-black absolute inset-0 rounded-2xl"/>
+				<motion.div variants={contentVariants} className="relative">
+					<div className="rounded-t-2xl overflow-hidden">
+						<Image className={classes.image} data={image}/>
 					</div>
-				)}
-			</div>
-		</article>
+					<div className={classes.body}>
+						<Heading className={classes.heading} label={heading} variant="heading-four"/>
+						<Text className={classes.content} variant="text-regular">{content}</Text>
+						{!isNil(meta) && (
+							<div className={classes.meta}>
+								{meta}
+							</div>
+						)}
+					</div>
+				</motion.div>
+			</motion.article>
+		</MotionConfig>
 	);
 };
 
