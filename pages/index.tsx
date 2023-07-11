@@ -6,10 +6,10 @@ import {ChevronRightIcon, CommandLineIcon} from '@heroicons/react/24/solid';
 import {getHomeData} from '@app/data';
 import type {HomeDTO} from '@app/data/home';
 import {revalidateSuccess} from '@app/library';
-import {Card, Container, Region} from '@app/components';
-import {generateDatoTestImage} from '@growthops/ext-ts';
+import {Card, Container, Heading, Region} from '@app/components';
+import {generateDatoTestImage, notNil} from '@growthops/ext-ts';
 import {Vercel} from '@app/components/svg';
-import {useRef} from 'react';
+import {useCallback, useEffect, useRef, useState} from 'react';
 import {useScroll, motion, useTransform, MotionConfig} from 'framer-motion';
 
 type IndexProperties = {
@@ -24,7 +24,6 @@ const classes = {
 	showcaseLink: `
 		inline-flex
 		items-center
-		mt-12
 		shadow-lg
 		text-sm
 		font-bold
@@ -56,6 +55,52 @@ const buttonLabelVariants = {
 	},
 };
 
+const sidebarVariants = {
+	open: (height = 1000) => ({
+		clipPath: `circle(${height * 2 + 100}px at 40px 40px)`,
+		transition: {
+			type: 'spring',
+			stiffness: 20,
+			restDelta: 2,
+		},
+	}),
+	closed: {
+		clipPath: 'circle(30px at 40px 40px)',
+		transition: {
+			delay: 0.5,
+			type: 'spring',
+			stiffness: 400,
+			damping: 40,
+		},
+	},
+};
+
+const navContainerVariants = {
+	open: {
+		transition: {staggerChildren: 0.07, delayChildren: 0.2},
+	},
+	closed: {
+		transition: {staggerChildren: 0.05, staggerDirection: -1},
+	},
+};
+
+const navItemVariants = {
+	open: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			y: {stiffness: 1000, velocity: -100},
+		},
+	},
+	closed: {
+		y: 50,
+		opacity: 0,
+		transition: {
+			y: {stiffness: 1000},
+		},
+	},
+};
+
 // const transition = {duration: 4, yoyo: Number.POSITIVE_INFINITY, ease: 'easeInOut'};
 
 const Index = ({data}: IndexProperties): JSX.Element => {
@@ -63,11 +108,71 @@ const Index = ({data}: IndexProperties): JSX.Element => {
 	const {scrollYProgress: heroScrollYProgress} = useScroll({target: heroReference, offset: ['start start', 'end start']});
 	const {scrollYProgress: windowScrollYProgress} = useScroll();
 	const y = useTransform(heroScrollYProgress, [0, 1], ['0%', '100%']);
+	const [isOpen, setIsOpen] = useState(false);
+	const [height, setHeight] = useState<number>();
+
+	const handleToggleNav = useCallback(() => {
+		setIsOpen(current => !current);
+	}, []);
+
+	useEffect(() => {
+		if (notNil(window)) {
+			setHeight(window.innerHeight);
+		}
+	}, []);
 
 	return (
 		<div className="relative">
-			<motion.div style={{scaleY: windowScrollYProgress}} className="fixed z-50 top-0 left-0 bottom-0 w-4 bg-white origin-top-left"/>
-			<div className="absolute top-0 bottom-0 z-50 py-16">
+			<motion.nav
+				initial={false}
+				animate={isOpen ? 'open' : 'closed'}
+				custom={notNil(height) ? height : undefined}
+			>
+				<motion.div className="fixed inset-0 bg-white" variants={sidebarVariants}/>
+				<motion.ul className="absolute" variants={navContainerVariants}>
+					<motion.li variants={navItemVariants}><Heading variant="heading-one" label="Test One"/></motion.li>
+					<motion.li variants={navItemVariants}><Heading variant="heading-one" label="Test Two"/></motion.li>
+					<motion.li variants={navItemVariants}><Heading variant="heading-one" label="Test Three"/></motion.li>
+				</motion.ul>
+				<button type="button" className="" onClick={handleToggleNav}>
+					<svg width="23" height="23" viewBox="0 0 23 23">
+						<motion.path
+							fill="transparent"
+							strokeWidth="3"
+							stroke="hsl(0, 0%, 18%)"
+							strokeLinecap="round"
+							variants={{
+								closed: {d: 'M 2 2.5 L 20 2.5'},
+								open: {d: 'M 3 16.5 L 17 2.5'},
+							}}
+						/>
+						<motion.path
+							fill="transparent"
+							strokeWidth="3"
+							stroke="hsl(0, 0%, 18%)"
+							strokeLinecap="round"
+							d="M 2 9.423 L 20 9.423"
+							variants={{
+								closed: {opacity: 1},
+								open: {opacity: 0},
+							}}
+							transition={{duration: 0.1}}
+						/>
+						<motion.path
+							fill="transparent"
+							strokeWidth="3"
+							stroke="hsl(0, 0%, 18%)"
+							strokeLinecap="round"
+							variants={{
+								closed: {d: 'M 2 16.346 L 20 16.346'},
+								open: {d: 'M 3 2.5 L 17 16.346'},
+							}}
+						/>
+					</svg>
+				</button>
+			</motion.nav>
+			<motion.div style={{scaleY: windowScrollYProgress}} className="fixed z-40 top-0 left-0 bottom-0 w-4 bg-white origin-top-left"/>
+			<div className="absolute top-0 bottom-0 z-40 py-16">
 				<motion.svg
 					viewBox="0 0 133 1369"
 					fill="none"
@@ -100,23 +205,42 @@ const Index = ({data}: IndexProperties): JSX.Element => {
 						<span>{data.heading}</span>
 					</h1>
 					<p className={classes.introduction}>{data.introduction}</p>
-					<Link legacyBehavior href="/build/showcase">
-						<a>
-							<MotionConfig transition={{duration: 0.4, type: 'tween'}}>
-								<motion.div whileHover="hover" className={classes.showcaseLink}>
-									<motion.span variants={buttonVariants} className="absolute top-0 right-4 bottom-0 bg-white rounded-full rounded-r-none"/>
-									<motion.span variants={labelContainerVariants} className="relative inline-block mr-4">
-										<motion.span variants={buttonLabelVariants}>
-											{data.viewShowcaseLabel}
+					<div className="flex flex-col mt-6 gap-y-6">
+						<Link legacyBehavior href="/build/showcase">
+							<a>
+								<MotionConfig transition={{duration: 0.4, type: 'tween'}}>
+									<motion.div whileHover="hover" className={classes.showcaseLink}>
+										<motion.span variants={buttonVariants} className="absolute top-0 right-4 bottom-0 bg-white rounded-full rounded-r-none"/>
+										<motion.span variants={labelContainerVariants} className="relative inline-block mr-4">
+											<motion.span variants={buttonLabelVariants}>
+												{data.viewShowcaseLabel}
+											</motion.span>
 										</motion.span>
-									</motion.span>
-									<span className="relative bg-white rounded-full p-2.5 text-gray-700">
-										<ChevronRightIcon className="w-5"/>
-									</span>
-								</motion.div>
-							</MotionConfig>
-						</a>
-					</Link>
+										<span className="relative bg-white rounded-full p-2.5 text-gray-700">
+											<ChevronRightIcon className="w-5"/>
+										</span>
+									</motion.div>
+								</MotionConfig>
+							</a>
+						</Link>
+						<Link legacyBehavior href="/rive">
+							<a>
+								<MotionConfig transition={{duration: 0.4, type: 'tween'}}>
+									<motion.div whileHover="hover" className={classes.showcaseLink}>
+										<motion.span variants={buttonVariants} className="absolute top-0 right-4 bottom-0 bg-white rounded-full rounded-r-none"/>
+										<motion.span variants={labelContainerVariants} className="relative inline-block mr-4">
+											<motion.span variants={buttonLabelVariants}>
+											Rive playground
+											</motion.span>
+										</motion.span>
+										<span className="relative bg-white rounded-full p-2.5 text-gray-700">
+											<ChevronRightIcon className="w-5"/>
+										</span>
+									</motion.div>
+								</MotionConfig>
+							</a>
+						</Link>
+					</div>
 				</main>
 			</div>
 			<Region hasTopMargin={false} className="bg-neutral-700 pt-16 relative">

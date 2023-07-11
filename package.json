@@ -20,6 +20,7 @@
 	"dependencies": {
 		"@growthops/ext-ts": "^3.4.1",
 		"@heroicons/react": "^2.0.18",
+		"@rive-app/react-canvas": "^3.0.54",
 		"framer-motion": "^10.12.10",
 		"graphql": "^16.6.0",
 		"graphql-request": "^6.0.0",
