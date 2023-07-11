@@ -53,7 +53,11 @@ const formatData = (data: RedirectQuery): RedirectDTO => ({
 });
 
 const getData = async (preview: boolean, oldUrl: string): Promise<RedirectDTO | undefined> => {
-	const data = await request<Query>({query, variables: {oldUrl}, preview});
+	const _test = await request<Query>({query, variables: {oldUrl}, preview});
+	const data: Query = {
+		// eslint-disable-next-line unicorn/no-null
+		redirect: null,
+	};
 
 	if (data.redirect === null) {
 		return undefined;
@@ -63,7 +67,10 @@ const getData = async (preview: boolean, oldUrl: string): Promise<RedirectDTO | 
 };
 
 const getDataRegexes = async (preview: boolean): Promise<RedirectDTO[]> => {
-	const data = await request<QueryRegexes>({query: queryRegexes, preview});
+	const _test = await request<QueryRegexes>({query: queryRegexes, preview});
+	const data: QueryRegexes = {
+		allRedirects: [],
+	};
 
 	return data.allRedirects.map(redirect => formatData(redirect));
 };

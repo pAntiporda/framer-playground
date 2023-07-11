@@ -77,7 +77,11 @@ const formatData = (data: ABTestQuery): ABTestDTO => ({
 });
 
 const getData = async (preview: boolean, key: string): Promise<Result<ABTestDTO>> => {
-	const data = await request<Query>({query, variables: {key}, preview});
+	const _test = await request<Query>({query, variables: {key}, preview});
+	const data: Query = {
+		// eslint-disable-next-line unicorn/no-null
+		abTest: null,
+	};
 
 	if (data.abTest === null) {
 		return failure('AB test not found', {key});
