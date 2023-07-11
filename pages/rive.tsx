@@ -1,10 +1,13 @@
 import {useRive, useStateMachineInput} from '@rive-app/react-canvas';
 import {Container, Region} from '@app/components';
-import {useMotionValueEvent, useScroll} from 'framer-motion';
+import {useInView, useMotionValueEvent, useScroll} from 'framer-motion';
 import {notNil} from '@growthops/ext-ts';
+import {useEffect, useRef} from 'react';
 
 const RivePage = (): JSX.Element => {
 	const {scrollYProgress} = useScroll();
+	const rocketTriggerReference = useRef(null);
+	const isTriggerInView = useInView(rocketTriggerReference);
 
 	const {rive: tree, RiveComponent: TreeComponent} = useRive({
 		src: 'rive/tree_demo.riv',
@@ -18,7 +21,15 @@ const RivePage = (): JSX.Element => {
 		autoplay: true,
 	});
 
+	const {rive: rocket, RiveComponent: RocketComponent} = useRive({
+		src: 'rive/rocket.riv',
+		stateMachines: 'Rocket',
+		autoplay: true,
+	});
+
 	const growthInput = useStateMachineInput(tree, 'State Machine 1', 'input');
+	const rocketTrigger = useStateMachineInput(rocket, 'Rocket', 'trigger');
+	const isRocketTakingOff = useStateMachineInput(rocket, 'Rocket', 'takeoff');
 
 	useMotionValueEvent(scrollYProgress, 'change', (latest) => {
 		if (notNil(growthInput) && notNil(tree)) {
@@ -26,11 +37,30 @@ const RivePage = (): JSX.Element => {
 		}
 	});
 
+	useEffect(() => {
+		if (rocketTrigger === null) {
+			return;
+		}
+
+		rocketTrigger.fire();
+	}, [rocketTrigger]);
+
+	useEffect(() => {
+		if (rocketTrigger === null || isRocketTakingOff === null) {
+			return;
+		}
+
+		isRocketTakingOff.value = isTriggerInView;
+	}, [rocketTrigger, isRocketTakingOff, isTriggerInView]);
+
 	return (
 		<main className="bg-gray-900 min-h-screen text-white py-32 relative">
-			<div className="fixed inset-0 flex flex-col justify-end">
+			<div className="fixed inset-0 flex justify-between">
 				<div className="w-1/4 h-full">
 					<TreeComponent/>
+				</div>
+				<div className="w-1/5 h-1/2">
+					<RocketComponent/>
 				</div>
 			</div>
 			<div className="relative z-10">
@@ -47,6 +77,13 @@ const RivePage = (): JSX.Element => {
 				<Region>
 					<Container>
 						<div className="bg-rose-600 w-full h-96"/>
+					</Container>
+				</Region>
+				<Region>
+					<Container>
+						<div ref={rocketTriggerReference} className="bg-lime-600 w-full h-screen flex items-center justify-center">
+							<p className="text-5xl font-semibold">LIFT OFF!</p>
+						</div>
 					</Container>
 				</Region>
 				<Region>
